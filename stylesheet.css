@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "TekoBold";
+    src: url(Teko-Bold.ttf)
+}
+
+
+body {
+    font-family: "TekoBold";
+}
+
+.container{
+    
+    display: grid;
+    grid-template-areas: "signup signup" "signup signup" "contact_form contact_form";
+}
+
+.signup{
+    grid-area: signup;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+.contact_form{
+    grid-area: contact_form;
+    margin: 5px;
+    text-align: center;
+    border: 5px solid black;
+    margin: 5px;
+}

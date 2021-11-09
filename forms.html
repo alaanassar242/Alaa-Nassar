@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form</title>
+    <link rel="stylesheet" href="stylesheet.css">  <!-- Linking the style sheet to the HTML doc, Done In Head-->
+
+</head>
+<body>
+
+    <div class="container">
+      <div class="signup">
+          <!--טופס הרשמה-->
+      <h2> Sign Up:  </h2>  
+      <form action="put in data base">
+          <label for="first name" > First Name</label><br> 
+          <input type="text" id="first name" name="frist_name"> <br> 
+          <label for="last name" > Last Name</label><br> 
+          <input type="text" id="last name" name="last_name"> <br> 
+          <label for="E-mail" > E-mail</label><br> 
+          <input type="text" id="E-mail" name="e-mail"> <br> 
+          <label for="text" >Password </label> <br>
+          <input type="password" id="Password0" name="password0"> <br> 
+          <label for="text" >Password Again: </label> <br>
+          <input type="password" id="Password1" name="password1"> <br> 
+          <label for="text" >Birthdate:</label> <br>
+          <input type="date" id="birthdate" name="trip-start" value="1998-03-24" min="1960-01-01" max="2021-12-31">
+          <input type="submit">
+        </div>
+     
+     
+
+     <div class="contact_form">
+        <h2> Contact Us:  </h2>  
+     <!--טופס יצירת קשר-->
+     <form action="put in data base">
+         <label for="first name" > First Name</label>
+         <input type="text" id="first name" name="frist name in sql table"> <br> <br>
+         <label for="last name" > Last Name</label>
+         <input type="text" id="last name" name="last name in sql table"> <br> <br>
+         <label for="E-mail" > E-mail</label>
+         <input type="text" id="E-mail" name="E-mail in sql table"> <br> <br>
+         <label for="text" > Write your text below: </label> <br>
+         <textarea name="YourRequests" id="YourRequests" cols="55" rows="6"> </textarea> <br> <br>
+         <input type="submit">
+     </div>
+
+    </div>
+        
+
+</body>
+</html>
