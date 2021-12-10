@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: "TekoBold";
@@ -6,61 +11,141 @@
 
 
 .container{
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "navbar title title" "navbar my_portarit my_portarit" "navbar about cv";
+    grid-template-areas: "navbar navbar navbar" "title title title" "my_portarit about about" "cv cv cv";
 }
 
 body {
     font-family: "TekoBold";
 }
 
-#logo {
-    width: 105px;
-    height: 105px;
-    border-radius: 5px;
+
+/*  ------------------nav bar edit------------------*/
+.navbar {
+    grid-area: navbar;
+    background: gray;
+    text-align: center;
+    height: 5vh;
+    font-size: 130%;
 }
 
-#name_title {
-    font-size: 80px;
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    color: whitesmoke;
+    text-align: center; 
 }
 
-#shalom {
-    font-size: 40px;
+.navbar ul li {
+    width: 10vw;
+    margin: 0px;
+    padding-top: 1vh;
+    height: 5vh;
 }
 
-#experince {
-    font-size: 20px;
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    height: 5vh;
 }
 
-#education {
-    font-size: 20px;  
+.navbar ul li:hover {
+    background: rgb(153, 146, 148);
+    border-radius: 3px;
+}
+
+.logo{
+    grid-area: title;
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 5%;
+}
+/* -------------------------------------------------------------------*/
+/*---------------------------------logo Desgin----------------------------------------*/
+
+.logo {
+    grid-area: title;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1px;
+    background-color: aliceblue;
+}
+
+.logo img{
+    margin-top: 1vw;
+    height: 9vw;
+    width: 9vw;
+    border-radius: 4%;
+}
+
+.logo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 8px;
+    background: transparent;
+    position: center;
+    text-align: center;
+    font-family: Copperplate;
+    font-size: 400%;
+    width: 100%;
+}
+
+/*-----------------------------portrait grid------------------------------------------*/
+
+
+.my_portarit{
+    grid-area: my_portarit;
+}
+
+.my_portarit img{
+    width: 30vw;
+    margin: 1vw;
+    border-radius: 5%;
+    
+}
+/*-----------------------------about grid--------------------------------------*/
+.about{
+    grid-area: about;
+    width: 66vw;
+    background-color: #888;
+    margin: 1vw;;
+    border-radius: 5%;
+    align-items: center;
 }
 
 
-#potrait {
-    width: 450px;
-    height: 300px;
-    border-radius: 5px;
+.about h1{
+    margin-left: 1.5vw;
+}
+.about p{
+    margin-left: 3vw;
 }
 
-.addMore{
-    font-family: "TekoBold";
-    border: none;
-    width: 100px;
-    height: 50px;
-    background-color: #eee;
-    transition: all ease-in-out 0.2s;
-    cursor: pointer;
-  }
-  .addMore:hover{
-    border: 1px solid #888;
-    background-color: #ddd;
-  }
+/*--------------------------cv grid---------------------------------------*/
+.cv{
+    grid-area: cv;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5%;
+}
 
-  @media screen and (max-width: 600px) {
-    .hide {
-      display: none;
+.cv h1{
+    margin-left: 1.5vw;
+}
+.cv p{
+    margin-left: 3vw;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+.hide {
+    display: none;
     }
-  }
+}
